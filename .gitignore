@@ -38,7 +38,7 @@ Thumbs.db
 .mypy_cache/
 coverage.xml
 htmlcov/
-.coverage
+.coverage	
 
 # Compiled files
 build/
