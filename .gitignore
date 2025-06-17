@@ -48,3 +48,7 @@ dist/
 # FAISS or large model data (if any)
 resources/**/*.faiss
 resources/**/*.pkl
+
+#CUSTOM
+
+resources
