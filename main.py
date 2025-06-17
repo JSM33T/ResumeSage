@@ -5,7 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from api import health
+from api import document, health
 
 load_dotenv()
 
@@ -45,3 +45,5 @@ async def log_exceptions(request: Request, call_next):
 
 # Routers
 app.include_router(health.router, prefix="/api/health")
+
+app.include_router(document.router, prefix="/api/document")
